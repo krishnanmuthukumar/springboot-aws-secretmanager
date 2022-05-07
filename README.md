@@ -1,4 +1,4 @@
-# springboot-aws-secretmanager #aws #springboot #secretsmanager
+**Integrate the AWS Secret Manager with Spring Boot**
 
 Using AWS secret manager to store your crdentials and using them in Springboo project . 
 
