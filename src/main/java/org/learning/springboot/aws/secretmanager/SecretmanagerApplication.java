@@ -7,8 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.core.env.Environment;
 
 @SpringBootApplication
-public class SecretmanagerApplication implements CommandLineRunner{
-	
+public class SecretmanagerApplication implements CommandLineRunner {
+
 	@Autowired
 	private Environment environment;
 
@@ -18,7 +18,10 @@ public class SecretmanagerApplication implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
-		System.out.println("Secret is : "+ environment.getProperty("mysecret"));
+		System.out.println("environment : " + environment.getProperty("environment"));
+		System.out.println("username : " + environment.getProperty("username"));
+		System.out.println("password : " + environment.getProperty("password"));
+		System.out.println("dbname : " + environment.getProperty("dbname"));
 	}
 
 }
