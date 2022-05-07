@@ -2,11 +2,12 @@
 
 Using AWS secret manager to store your crdentials and using them in Springboo project . 
 
-1. Create a secret manager entry in AWS
-2. Create an IAM user with AWS secret manager read/write permission
+1. Create application properties in AWS Secret Manager
+2. Create an IAM user with _SecretsManagerReadWrite_ permission
 
-in application.properties file, add the below property 
+Set the aws credential in your system.
 
+in application.properties file of the application , add the below property 
 spring.config.import: aws-secretsmanager:test/mysecret;
 
 
